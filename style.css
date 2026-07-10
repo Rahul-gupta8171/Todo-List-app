@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: aqua;
+}
+
+.main {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    flex-direction: column;
+    gap: 12px;
+    left: 50px;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* left: 50px; */
+    top: 220px;
+}
+
+#todo-list {
+    margin-top: 20px;
+    border: 1px solid red;
+    padding: 12px;
+    border-radius: 5px;
+
+}
+
+#todo-list:empty {
+    border: none;
+    padding: 0;
+}
+
+#todo-list li {
+    display: grid;
+    grid-template-columns: 0.5fr 5fr 1fr;
+    border-bottom: 1px solid rgb(192, 192, 218);
+    font-family: ubuntu;
+    text-transform: capitalize;
+
+    /* text-align: start; */
+    /* flex-direction: column; */
+    list-style: none;
+    padding: 5px 0px;
+}
+
+
+#headline {
+    font-size: 60px;
+    width: 500px;
+
+    /* color: #ffe2e2; */
+    font-family: yuyu;
+}
+
+#tag-line {
+    font-family: ubuntu;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+#todo-input {
+    width: 19rem;
+    padding: 6px;
+    font-family: ubuntu;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-radius: 8px;
+    box-shadow: offset-x offset-y blur-radius spread-radius color;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+#todo-input:focus {
+    box-shadow: 0 0 25px rgba(199, 3, 3, 0.7);
+    transform: scale(1.02);
+    border: none;
+}
+
+#add-btn {
+    padding: 8px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9e03f;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+#add-btn:hover {
+    background-color: #c7af16;
+    padding: 9px 26px;
+}
+
+#delbtn {
+    padding: 0px 10px;
+    font-size: 15px;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 490px) {
+
+    
+    .main {
+        margin-left: 100px;
+
+    }
+    #headline{
+        font-size: 55px;
+        
+    }
+
+   
+}
+@media (max-width: 395px) {
+
+    
+    .main {
+        margin-left: 150px;
+    }
+    
+   
+}
+@media (max-width: 330px) {
+
+    
+    .main {
+        margin-left: 170px;
+    }
+    
+   
+}

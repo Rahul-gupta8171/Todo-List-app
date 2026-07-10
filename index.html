@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yuyu&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yuyu&family=Yuyu+Short&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      
+        <h1 id="headline">This is a Todo list Webpage</h1>
+        <p id="tag-line">
+          Welcome to this todo list. Double click to edit the todo
+        </p>
+        <div class="content">
+              <input
+                type="text"
+                id="todo-input"
+                placeholder="Enter a todo and press Add or Enter"
+              />
+              <br>
+
+              <button id="add-btn">Add</button>
+              <ul id="todo-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
